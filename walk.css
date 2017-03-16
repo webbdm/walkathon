@@ -1,0 +1,25 @@
+body{
+  background: url("http://www.twitrcovers.com/wp-content/uploads/2013/03/Running-Jogging-l.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+fieldset{
+  max-width: 300px;
+  text-align: center;
+}
+
+form{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 3em; 
+
+}
+
+.table-style{
+  background-color: rgba(38, 12, 12, 0.65);
+  border-radius: 5px;
+  width: 50%;
+  margin: 0px auto;
+  float: none;
+}
