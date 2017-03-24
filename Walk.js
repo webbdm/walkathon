@@ -1,27 +1,30 @@
-var Walk = (function(){
+var Walk = (function() {
 
-	var info = {
-		name: "Walker",
-		pledge:"5",
-		interval: "per mile",
-		email: "walker@walker"
-	}
+    var info = { name: "", email: "", pledge: "", interval: "" };
+    var newDonors = [];
 
+    return {
+        getInfo: function() {
+            return info;
+        },
 
-	return {
+        addDonor: function(info) {
 
-	  getInfo: function(){
+            info.name = walkerName.value;
+            info.email = email.value;
+            info.pledge = pledge.value;
+            info.interval = getRadioValue();
+            newDonors.push(info);
 
-	  		return info;
-
-	  },
-	  setInfo: function(){
-	  		// eventually when a form is submitted, this will call setInfo(getInfo()) which will grab the info 
-	  },
-
-	  addDonor: function(){
-	  	   //  This will be addDonor(setInfo(getInfo()))
-	  }
-	}
+            var mainTable = document.getElementById('tableBody');
+            var newRow = "";
+            newRow += '<tr>'
+            newRow += '<td>' + newDonors[0].name + '</td>';
+            newRow += '<td>' + newDonors[0].email + '</td>';
+            newRow += '<td>' + newDonors[0].pledge + '</td>';
+            newRow += '<td>' + newDonors[0].interval + '</td>';
+            newRow += '</tr>'
+            mainTable.innerHTML += newRow;
+        }
+    }
 })();
-

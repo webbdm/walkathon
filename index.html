@@ -1,79 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Walk-a-Thon</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Pacifico" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="walk.css">
-  </head>
+</head>
 
-
-  <body>
-  
-
-  <div class="container">
-	<div class="row">
-
-	<div class="col-lg-6 text-center">
-	   <table class="table table-bordered table-style table-center">
-
-	  	<tr>
-		    <th>Name</th>
-		    <th>Email</th>
-		    <th>Amount</th>
-  		</tr>
-		<tr>
-		    <td>name</td>
-		    <td>email</td>
-		    <td>amount</td>
-		</tr>
-	
-  
-	   </table>
-	  </div>
-	 <div class="col-lg-6 text-center">
-
-	  <h1>1st Annual Walk-A-Thon</h1>
-
-	  <form class="form-horizontal">
-		  
-
-		  	<input class="form-control" type="text" name="" placeholder="Enter Name">
-		  	<input class="form-control" type="email" name="" placeholder="Enter Email">
-
-		  	<div class="input-group">
-		  		<span class="input-group-addon">$</span>
-		  		<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-		  		<span class="input-group-addon">.00</span>
-			</div>
-
-			<label class="radios">
-		 		<input type="radio" name="radios" id="lumpSum" value="option1"> Lump Sum
-			</label>
-			<label class="radios">
-	 			 <input type="radio" name="radios" id="perLap" value="option2"> Per Lap
-			</label><br>
-
-			<input class="btn btn-default" type="submit" value="Submit">
-			<input class="btn btn-default" type="submit" value="Clear">
-
-
-	   </form>
-	 </div>
-	</div>
- </div>
-
-
-
-
-
-
-
-  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<body>
+    <h1>1st Annual Walk-A-Thon</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <table class="table table-bordered table-style table-striped table-center" id="mainTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Pledge</th>
+                        <th>Interval</th>
+                    </tr>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>name</td>
+                            <td>email</td>
+                            <td>pledge</td>
+                            <td>interval</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 text-center">
+                <form class="form-horizontal" onsubmit="return false">
+                    <input class="form-control" id="name" type="text" name="text" placeholder="Enter Name">
+                    <input class="form-control" id="email" type="email" name="email" placeholder="Enter Email">
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" class="form-control" id="pledge" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-addon">.00</span>
+                    </div>
+                    <input type="radio" class="radioNode" name="radios" id="lumpSum" value="Lump Sum"> Lump Sum
+                    <br>
+                    <input type="radio" class="radioNode" name="radios" id="perLap" value="Per Lap"> Per Lap
+                    <br>
+                    <input class="btn btn-default" id="submitBtn" type="submit" value="Submit">
+                    <input class="btn btn-default" id="clearBtn" type="submit" value="Clear">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="Walk.js"></script>
     <script type="text/javascript" src="walkDOM.js"></script>
+</body>
 
-  </body>
 </html>

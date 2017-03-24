@@ -1,25 +1,37 @@
-body{
-  background: url("http://www.twitrcovers.com/wp-content/uploads/2013/03/Running-Jogging-l.jpg") no-repeat center center fixed;
-  background-size: cover;
+body {
+    background: url("http://www.twitrcovers.com/wp-content/uploads/2013/03/Running-Jogging-l.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-form{
-  display: block;
-  width: 50%;
-  margin: 7% auto;
-  padding: 3em; 
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: rgba(38, 12, 12, 0.75);
-  color: white;
-
+h1 {
+    text-align: center;
+    margin: 7%;
+    font-size: 5em;
+    font-family: 'Bangers', cursive;
 }
 
-.table-style{
-  background-color: rgba(38, 12, 12, 0.75);
-  border-radius: 5px;
-  color: white;
-  width: 50%;
-  margin: 15% auto;
-  float: none;
+form {
+    display: block;
+    width: 50%;
+    margin: 7% auto;
+    padding: 3em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(38, 12, 12, 0.75);
+    color: white;
+}
+
+.table-style {
+    background-color: rgba(38, 12, 12, 0.70);
+    border-radius: 5px;
+    /*   color: white; */
+    width: 50%;
+    color: white;
+    margin: 15% auto;
+    float: none;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: rgba(38, 12, 12, 0.85);
 }
